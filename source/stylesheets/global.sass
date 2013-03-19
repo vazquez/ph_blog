@@ -1,5 +1,5 @@
-@import "bits"
 @import "reset"
+@import "bits"
 
 html
   font-size: 62.5%
@@ -13,10 +13,28 @@ aside
   width: 35%
   height: 100%
   background: $c-sidebar
+  .content
+    float: right
+    width: 55%
+    padding: 5%  10% 0 0
+    h4
+      margin-bottom: 1rem
+      font-size: 2rem
+      color: $c-link
+    p
+      font-size: 1.3rem
+      line-height: 1.6rem
+      color: $c-text
+      a
+        color: $c-text
+        text-decoration: none
+        +transition
+        &:hover
+          color: $c-link
   
 section
   width: 44%
-  padding: 5% 0 0 40%
+  padding: 10% 0 0 40%
   h2
     font-size: 5.4rem
     a
@@ -27,7 +45,17 @@ section
         color: lighten($c-link, 10%)
         background: #FFF6E5
         
-  
   article
     .date
-      font-size: 1.2rem
+      margin: 1rem 0 1.5rem 0
+      font-size: 1.3rem
+      line-height: 1.2rem
+      color: #636F7A
+      
+#disqus_thread
+  padding: 1.5rem 0 0 0
+  a
+    color: $c-link
+  .post-message 
+    p
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif
