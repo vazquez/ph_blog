@@ -3,14 +3,27 @@
   -moz-box-sizing: border-box
   box-sizing: border-box
 
+@mixin transition
+  -webkit-transition: all 0.2s ease-in
+  -moz-transition: all 0.2s ease-in
+  -o-transition: all 0.2s ease-in
+  transition: all 0.2s ease-in
+  
+$c-sidebar: #FFF6E5
+$c-text: #3E454C
+$c-heading: #2185C5
+$c-link: #FF7F66
+
 h2
   font-family: "adelle", serif
   font-style: normal
   font-weight: 400
   font-size: 2.6rem
+  color: $c-heading
 
 p
   font-family: "ff-tisa-web-pro", serif
   font-style: normal
   font-weight: 400
-  font-size: 2rem
+  font-size: 2.3rem
+  color: $c-text
