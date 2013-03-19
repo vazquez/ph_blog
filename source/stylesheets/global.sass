@@ -20,11 +20,11 @@ aside
     h4
       margin: 0 0 1rem 0
       font-size: 2rem
-      color: $c-link
+      color: $c-sublink
     h6
       margin: 2rem 0 0.5rem 0
       font-size: 1.5rem
-      color: $c-link
+      color: $c-sublink
     p
       font-size: 1.3rem
       line-height: 1.6rem
@@ -42,6 +42,9 @@ aside
           text-decoration: none
           color: $c-text
           font-size: 1.2rem
+          +transition
+          &:hover
+            color: $c-link
       span
         font-size: 1.1rem
         color: $c-text
@@ -51,20 +54,22 @@ section
   padding: 10% 0 0 40%
   h2
     font-size: 5.4rem
+    line-height: 5.6rem
+    letter-spacing: -0.19rem
     a
       color: $c-link
       text-decoration: none
       +transition
       &:hover
-        color: lighten($c-link, 10%)
-        background: #FFF6E5
+        color: white
+        background: $c-link
         
   article
     .date
       margin: 1rem 0 1.5rem 0
       font-size: 1.3rem
       line-height: 1.2rem
-      color: #636F7A
+      color: $c-text
       
 #disqus_thread
   padding: 1.5rem 0 0 0
@@ -73,3 +78,7 @@ section
   .post-message 
     p
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+
+::selection
+  background: $c-link
+  color: white
