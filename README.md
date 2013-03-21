@@ -15,6 +15,7 @@ A Blog about Design, Front-End Design, Culture, Visual Communication, Tips and T
 - Add text-shadow on blog post title
 - Night-mode
 - Dynamic colour scheme
+- Add <code> syntax highlighting
 
 ######BUGS:
 
