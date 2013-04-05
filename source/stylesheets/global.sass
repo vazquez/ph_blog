@@ -53,29 +53,20 @@ section
       line-height: 1.2rem
       color: $c-text
     .read-more-btn
-      float: right
+      float: left
       position: relative
-      padding: 2%
-      margin: 3% 0
+      padding: 1.5%
+      margin: 2% 0 4% 0
       background: $c-main
       color: white
       text-decoration: none
       font-size: 1.2rem
       +border-radius(3px)
-      &:after
-        content: ''
-        position: absolute
-        display: block
-        width: 26px
-        height: 26px
-        transform: rotate(45deg)
-        -webkit-transform: rotate(45deg)
-        -o-transform: rotate(45deg)
-        -moz-transform: rotate(45deg)
-        background: $c-main
-        top: 6px
-        right: -12px
-        +border-top-right-radius(3px)
+      +transition()
+      &:hover
+        background: darken($c-main, 15%)
+      &:active
+        background: lighten($c-main, 3%)
 footer
   float: left
   width: 35%
