@@ -6,16 +6,16 @@
 
 activate :blog do |blog|
   # blog.prefix = "blog"
-  # blog.permalink = ":year/:month/:day/:title.html"
+  blog.permalink = ":year/:month/:day/:title"
   # blog.sources = ":year-:month-:day-:title.html"
   # blog.taglink = "tags/:tag.html"
-  blog.layout = "article_layout"
+  blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
   #blog.summary_length = 250
   # blog.year_link = ":year.html"
   # blog.month_link = ":year/:month.html"
   # blog.day_link = ":year/:month/:day.html"
-  #blog.default_extension = ".markdown"
+  blog.default_extension = ".markdown"
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
@@ -80,6 +80,11 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
+set :markdown_engine, :redcarpet
+set :markdown,  :fenced_code_blocks => true,
+                :autolink => true, 
+                :smartypants => true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -99,6 +104,7 @@ configure :build do
   # First: gem install middleman-smusher
   # require "middleman-smusher"
   # activate :smusher
+  activate :directory_indexes
   
   # Or use a different image path
   # set :http_path, "/Content/images/"
