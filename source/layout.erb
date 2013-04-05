@@ -24,6 +24,12 @@
     
   </head>
   <body>
+    <header>
+    </header>
+    <section>
+        <%= yield %>
+        <!-- index.hml.erb is rendered here -->
+    </section>
     <aside>
       <div class="content">
         <h4>Pixel Happiness</h4>
@@ -53,12 +59,6 @@
           <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
         <% end %> 
       </ol> -->
-    </aside>
-    
-    <section>
-        <%= yield %>
-        <!-- index.hml.erb is rendered here -->
-    </section>
     <footer></footer>
   </body>
 </html>
