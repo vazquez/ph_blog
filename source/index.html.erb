@@ -17,6 +17,8 @@ per_page: 10
     </h2>
     <p class="date"><%= article.date.strftime('Moleskine written on %A, %B %d, %Y') %></p>
     <p><%= article.summary %></p>
+    <!-- <%=  article.url %> -->
+    <a class="read-more-btn" href="<%= article.url %>">Continue Reading</a>
     </article>
     <hr>
 <% end %>

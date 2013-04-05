@@ -12,12 +12,56 @@ body
 header
   background: $c-main
   height: 1%
-  h4
-    font-family: "bello-caps",cursive
+aside
+  float: left
+  margin: 8% 0 0 2%
+  a
+    color: $c-main
+    font-size: 1.8rem
+    line-height: 2.6rem
+    font-style: normal
+    font-family: "adelle", serif
     font-style: normal
     font-weight: 400
-    color: white
-aside
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  p
+    font-size: 1.4rem
+    line-height: 2.2rem
+    color: $c-text
+    
+section
+  width: 50%
+  margin: 0 auto
+  padding: 7% 0 0 0
+  h2
+    font-size: 5.4rem
+    line-height: 5.6rem
+    letter-spacing: -0.19rem
+    +single-text-shadow
+    a
+      color: $c-main
+      text-decoration: none
+      +transition()
+      &:hover
+        color: $c-hover
+  article
+    .date
+      margin: 1rem 0 1.5rem 0
+      font-size: 1.3rem
+      line-height: 1.2rem
+      color: $c-text
+    .read-more-btn
+      float: right
+      padding: 2%
+      margin: 3% 0
+      background: $c-main
+      color: white
+      text-decoration: none
+      font-size: 1.2rem
+      +border-radius(3px)
+footer
   float: left
   width: 35%
   height: 100%
@@ -60,32 +104,10 @@ aside
         color: $c-secondary
         opacity: 0.7
 
-section
-  width: 50%
-  margin: 0 auto
-  padding: 7% 0 0 0
-  h2
-    font-size: 5.4rem
-    line-height: 5.6rem
-    letter-spacing: -0.19rem
-    +single-text-shadow
-    a
-      color: $c-main
-      text-decoration: none
-      &:hover
-        color: white
-        background: $c-main
-        
-  article
-    .date
-      margin: 1rem 0 1.5rem 0
-      font-size: 1.3rem
-      line-height: 1.2rem
-      color: $c-text
-  
 hr
   border: 1px dashed $c-main
   margin: 2rem 0
+  clear: both
 
 
       

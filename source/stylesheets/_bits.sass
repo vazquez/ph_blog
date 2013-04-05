@@ -1,4 +1,5 @@
 @import "compass/css3/text-shadow"
+@import "compass/css3/border-radius"
 
 // Compass Variables
 $default-text-shadow-color: #9E001D
@@ -18,6 +19,13 @@ $default-text-shadow-spread: false
   -moz-transition: all 0.2s ease-in
   -o-transition: all 0.2s ease-in
   transition: all 0.2s ease-in
+
+@mixin clearfix
+  content: "."
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
   
 $c-sidebar: #FFF6E5
 $c-text: #523B11//#3E454C
@@ -25,8 +33,9 @@ $c-heading: #2185C5
 $c-main: #f2385a//#36b1bf
 $c-secondary: #9E001D 
 $c-sublink: #f2385a//#FF7F66
+$c-hover: #3E454C
 
-h2,h4,h6,ol
+h2,h4,h6,ol,a
   font-family: "adelle", serif
   font-style: normal
   
